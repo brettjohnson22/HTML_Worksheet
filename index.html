@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>devCodeCamp HTML Worksheet</title>
-    <style>
-        p, h1, h2, h3, h4, h5, h6 {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
+    <style> body { font-family: Arial, Helvetica, sans-serif; } </style>
 </head>
 <body>
     <p>devCodeCamp HTML Worksheet</p>
@@ -22,6 +18,9 @@
         </li>
         <li>
             <p>Lists and Tables</p>
+        </li>
+        <li>
+            <p>Attributes</p>
         </li>
         <li>
             <p>Hyperlinks</p>
@@ -54,6 +53,10 @@
             <p>Refresh the page in the browser.</p>
         </li>
     </ol>
+
+    <p>Make sure you get in the habit of these two steps, otherwise you will not see the changes you're making to the webpage!</p>
+
+    <br>
     <br>
 
     <p>Section 1 - Paragraphs and Headers</p>
@@ -83,6 +86,7 @@
     <p>Isn't that better?</p>
 
     <br>
+    <br>
 
     <p>Section 2 - Lists and Tables</p>
 
@@ -107,6 +111,7 @@
 
     <p>Ordered lists work just like Unordered lists, but they use a &lt;ol&gt; tag instead of &lt;ul&gt;. Change the Unordered List you just created into an Ordered List. The &lt;li&gt; tags can remain the same!</p>
 
+    <br>
     <br>
 
     <p>Subsection b. - Tables</p>
@@ -141,6 +146,7 @@
     <p>Before moving on, remember to change your section headings to h2s, and subsection headings to h3s.</p>
 
     <br>
+    <br>
 
     <p>Section 3 - Attributes</p>
 
@@ -160,6 +166,7 @@
         <p>This block of text is enclosed by a &lt;div&gt; element. Divs are often used to create sections in a webpage. We will do more with divs later, but for now, give this div an attribute with the name <b>id</b> and the value <b>"target"</b>. We will shortly be using this id as the target of a hyperlink.</p>
     </div>
 
+    <br>
     <br>
 
     <p>Section 4 - Hyperlinks and Formatting</p>
@@ -263,18 +270,7 @@
     <br>
     <br/>
     <br />
-    <br>
-    <br/>
-    <br />
-    <br>
-    <br/>
-    <br />
-    <br>
-    <br/>
-    <br />
-    <br>
-    <br/>
-    <br />
+    
     <p>Welcome back! Let's now create a hyperlink that will take us back to the "target" id we created earlier.</p>
 
     <p>Hyperlinks use the &lt;a&gt; (anchor) tag. This is another time where we will be using attributes, since we need to tell a link where it should send the user when clicked.</p>
@@ -283,7 +279,7 @@
 
     <p><a href="#Earl">Hey Earl.</a></p>
 
-    <p>In the browser, hover your mouse over these two link and notice the address pop up in the lower left corner of the browser. Then click the link, see what happens, then scroll back to this point.</p>
+    <p>In the browser, hover your mouse over these two link and notice the address pop up in the lower left corner of the browser. Then click the link, look at the top line in the browser, then scroll back to this point.</p>
 
     <p>Be sure to examine the link in VS Code. Notice that the href is set to <b>#Earl</b>, even though the actual id of the element is just "Earl". Always use the # when referring to an id, but you do not actually name the id itself with a #.</p>
 
@@ -315,34 +311,36 @@
     <p>There should be an image called "coffee.jpg" included in this folder. Add it to this page in an img tag below. Since it is in the same folder, you can just enter the filename itself in the src="". Also make sure to come up with a descriptive string for the alt!</p>
 
 
-
+    <br>
     <br>
 
     <p>Section 6 - Inline vs Block</p>
 
+    <p>The last thing we'll look at on this project is something that you may or may not have noticed yet.</p>
 
+    <p>Why is it that <b>some</b> elements are able to <a href="">blend</a> <i>right</i> into others <span>without causing a new line</span>, while other elements <div>definitely</div> <aside>can</aside> not?</p>
 
+    <p>Be sure to look at the previous sentence in VS Code! Notice all the different element tags nested inside the single &lt;p&gt; tag.</p>
+    
+    <p>The first few, the &lt;b&gt;, &lt;a&gt;, &lt;i&gt;, and &lt;span&gt;, are all seamlessly integrated into the sentence, while the &lt;div&gt; and &lt;aside&gt; push their words onto new lines, even though there is no differnce in how they are used within the sentence. There are no &lt;br&gt; line breaks, so why is this happening?</p>
 
+    <p>This is an essential concept to understand in HTML. All elements have a default display value that determines which of these two behaviors they will exhibit.</p>
 
+    <p>In fact, every body tag you've written or seen so far has done one or the other!</p>
 
+    <p><b>Block</b> tags like &lt;p&gt;, &lt;h1&gt;, &lt;div&gt; and &lt;aside&gt; all <b>block</b> out an entire line, which means they start a new line and take up as much page width as they can.</p>
 
+    <p>Meanwhile, <b>inline</b> elements like &lt;a&gt;, &lt;b&gt;, &lt;img&gt; and &lt;span&gt;do NOT start a new line, and they only take up as much width as their content needs, allowing for several of them to exist on the same line.</p>
 
+    <br>
+    <br>
 
+    <p>Your final task for this sheet is to go back to Section Overview at the top of the page and turn the list items into links that will take you to the different sections. That way, this sheet will server as a handy reference when you build more websites! Remember that you will also need to add ids in the section headers for the links.</p>
 
+    <p>Happy Coding!</p>
 
-
-
-
-
-
-
-    <p>I like rock.</p><p>I like funk.</p>
-
-
-
-
-
-
+    <br>
+    <br>
 
 </body>
 </html>
