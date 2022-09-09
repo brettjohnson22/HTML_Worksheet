@@ -24,31 +24,29 @@
                     This worksheet will help introduce you to some of the main concepts of HTML. You will learn:
                 </p>
 
-                <nav>
-                    <ul>
-                        <li>
-                            <p>Paragraphs and Headers</p>
-                        </li>
-                        <li>
-                            <p>Lists and Tables</p>
-                        </li>
-                        <li>
-                            <p>Attributes</p>
-                        </li>
-                        <li>
-                            <p>Hyperlinks</p>
-                        </li>
-                        <li>
-                            <p>Images</p>
-                        </li>
-                        <li>
-                            <p>In-line and block elements</p>
-                        </li>
-                        <li>
-                            <p>And much more!</p>
-                        </li>
-                    </ul>
-                </nav>
+                <ul>
+                    <li>
+                        <p>Paragraphs and Headers</p>
+                    </li>
+                    <li>
+                        <p>Lists and Tables</p>
+                    </li>
+                    <li>
+                        <p>Attributes</p>
+                    </li>
+                    <li>
+                        <p>Hyperlinks</p>
+                    </li>
+                    <li>
+                        <p>Images</p>
+                    </li>
+                    <li>
+                        <p>In-line and block elements</p>
+                    </li>
+                    <li>
+                        <p>And much more!</p>
+                    </li>
+                </ul>
 
                 <p>
                     This worksheet is intended to be open in two programs: VS Code and your preferred web browser. To open it in your browser, find the index.html file in your File Explorer (Finder on Mac) and double click it-- it should open in your system's default browser.
@@ -153,7 +151,7 @@
                 </p>
 
                 <p>
-                    Notice that the entire list itself is enclosed between and opening and closing &lt;ul&gt; (undordered list) tag. Then, each item in the list is enclosed in a &lt;li&gt;(list item) tag. Both parts are essential here: the &lt;ul&gt; defines when the list starts and ends (we don't want the browser to think the entire page is part of the list!), and then we need and &lt;li&gt; for each separate thing we want listed out.
+                    Notice that the entire list itself is enclosed between and opening and closing &lt;ul&gt; (unordered list) tag. Then, each item in the list is enclosed in a &lt;li&gt;(list item) tag. Both parts are essential here: the &lt;ul&gt; defines when the list starts and ends (we don't want the browser to think the entire page is part of the list!), and then we need an &lt;li&gt; for each separate thing we want listed out.
                 </p>
 
                 <p>
@@ -208,6 +206,10 @@
                 </p>
 
                 <p>
+                    You may also see some tables further organize their sections into &lt;thead&gt; tags to contain the &lt;th&gt; header rows and &lt;tbody&gt; to contain the regular &lt;td&gt; data rows, but this is not required.
+                </p>
+
+                <p>
                     Before moving on, remember to change your section headings to h2s, and subsection headings to h3s.
                 </p>
 
@@ -220,11 +222,11 @@
                 <p>Section 3 - Attributes</p>
 
                 <p>
-                    Some tag require more information than just what type of tag it is. This "extra" information is supplied through <b>attributes</b>.
+                    Some tags require more information than just what type of tag it is. This "extra" information is supplied through <b>attributes</b>.
                 </p>
 
                 <p>
-                    Attributes are name=value pairs added inside the element's opening tag. There are many attributes, some can be used on any element, and some are specific to certain elements. The value of attributes will always be enclosed in "quotes". Elements can have multiple attributes!
+                    Attributes are name=value pairs added inside the element's opening tag. There are many attributes--some can be used on any element, and some are specific to certain elements. The value of attributes will always be enclosed in "quotes". Elements can have multiple attributes!
                 </p>
 
                 <p>
@@ -233,7 +235,7 @@
 
                 <p id="Earl">My id is Earl.</p>
 
-                <p>Be sure to examine the above line in VS Code.</p>
+                <p>(Be sure to examine the above line in VS Code.)</p>
 
                 <p>
                     That means there can never be another element on the same .html page that also has an id with the value of "Earl".
@@ -264,7 +266,7 @@
 
 
                                 <p>
-                                    Find this line on the index.html page in VS Code. It will be easy to spot, it is the paragraph that is tabbed in 5 extra spaces. Notice that, even though it is tabbed in on the .html file, the text in the browser looks the same as all the others. Also, there are 10+ empty lines above it, yet this not create empty lines on the webpage in the browser? This demonstrates that non-markdown formatting in the .html file does not have any affect on the actual formatting of the webpage content.
+                                    Find this line on the index.html page in VS Code. It will be easy to spot, it is the paragraph that is tabbed in several extra spaces to the right. Notice that, even though it is tabbed in on the .html file, the text in the browser looks the same as all the others. Also, there are 10+ empty lines above it, yet this not create empty lines on the webpage in the browser? This demonstrates that non-markdown formatting in the .html file does not have any affect on the actual formatting of the webpage content.
                                 </p>
                                 
                                 
@@ -287,9 +289,17 @@
                 <p>
                     The above &lt;ul&gt; is a perfect example of all three of these formatting tips in action. Go back to VS Code to examine it. Always strive you keep your code well-formatted like this. No one wants to work with a sloppy coder!
                 </p>
-                                    
+
+                <p>
+                    Also take note of the grey lines to the left of the screen in VS Code. When formatted correctly, these grey lines will show the "scope" of a single tag, connecting the opening tag to the closing tag. Additionally, there should be empty space with no line between the closing of one tag and the opening of a "sibling" tag on the same level.
                 </p>
-                The following section is using many &lt;br&gt; tags to create some buffer space.
+
+        <p>
+                    This paragraph's &lt;p&gt; tags are not aligned correctly. Notice how its tags looks different from the other paragraphs surrounding it. Fix the opening and closing tag here so that this paragraph is formatted seemlessly with its siblings!
+                        </p>
+                                    
+                <p>
+                    The following section is using many &lt;br&gt; tags to create some buffer space.
                 </p>
 
                 <p>
@@ -297,14 +307,17 @@
                 </p>
 
                 <p>
-                    "Br" stands for "Break", and it adds a line break in the page. Notice that the tags in VSCode are done three different ways, but they all behave the same. This is because, unlike many other HTML tags we've used so far, the br tag does not require an opening and closing tag. Elemnts like this, which only have an opening tag, are called a "void" or "empty" element. They may contain attributes (we will see this in the img tag later, but they cannot have content placed between an opening and closing tag.
+                    "Br" stands for "Break", and it adds a line break in the page, or even with a single paragraph element. Notice that the tags in VSCode are done three different ways, but they all behave the same. This is because, unlike many other HTML tags we've used so far, the br tag does not require an opening and closing tag. Elemnts like this, which only have an opening tag, are called a "void" or "empty" element. They may contain attributes (we will see this in the img tag later, but they cannot have content placed between an opening and closing tag.
                 </p>
 
                 <p>
                     You might see a void tag used like &lt;br&gt;, &lt;br/&gt;, or &lt;br /&gt;. In modern HTML, they all behave the same, but &lt;br&gt; is simpler and preferred. Some developers call these "self-closing" tags, which is why they are sometimes written like an opening tag that also contains its own /.
-                    </p>
+                </p>
 
-                <p>Scroll down past all the blank space to continue with the worksheet!</p>
+                <p>
+                    Scroll down past all the blank space to continue with the worksheet!
+                </p>
+
                 <br>
                 <br/>
                 <br />
@@ -375,13 +388,13 @@
                 </p>
                 
                 <p>
-                    Anchor tags use the <b>href</b> attribute to hold the address that a user will be taken to when clicked. This address can be actual website urls like <a href="http://www.google.com">this link which takes you to Google.</a> Or it can route the user to an element on the same page by using the element's id as the href. Here is another hyperlink:
+                    Anchor tags use the <b>href</b> (hypertext reference) attribute to hold the address that a user will be taken to when clicked. This address can be actual website urls like <a href="http://www.google.com">this link which takes you to Google.</a> Or it can route the user to an element on the same page by using the element's id as the href. Here is another hyperlink:
                 </p>
 
                 <p><a href="#Earl">Hey Earl.</a></p>
 
                 <p>
-                    In the browser, hover your mouse over these two link and notice the address pop up in the lower left corner of the browser. Then click the link, look at the top line in the browser, then scroll back to this point.
+                    In the browser, hover your mouse over these two link and notice the address pop up in the lower left corner of the browser. Then click the "Hey Earl" link, look at the top line in the browser, then scroll back to this point.
                 </p>
 
                 <p>
@@ -457,6 +470,44 @@
                     That is where semantic elements come in. The term <i>Semantics</i> can be defined as "The study of relationships between signs and symbols and what they represent." So "semantic elements" are elements whose names describe their purpose or placement on the webpage--to the developer and the browser.
                 </p>
 
+                <p>
+                    You've hopefully already seen some semantic elements if you've been paying attention! Each "section" of this worksheet is contained within its own &lt;section&gt; tag. Additionally, the main heading of the page is within a &lt;header&gt; (which is distinct from the non-visual &lt;head&gt;).
+                </p>
+
+                <p>Some other semantic elements are:</p>
+
+                <ul>
+                    <li>
+                        <p>&lt;article&gt;</p>
+                    </li>
+                    <li>
+                        <p>&lt;aside&gt;</p>
+                    </li>
+                    <li>
+                        <p>&lt;figure&gt;</p>
+                    </li>
+                    <li>
+                        <p>&lt;footer&gt;</p>
+                    </li>
+                    <li>
+                        <p>&lt;main&gt;</p>
+                    </li>
+                    <li>
+                        <p>&lt;nav&gt;</p>
+                    </li>
+                    <li>
+                        <p>&lt;summary&gt;</p>
+                    </li>
+                </ul>
+
+                <p>
+                    Notice that just using a &lt;section&gt; tag does not automatically add any styling. Semantic elements still need to be placed and styled accordingly.
+                </p>
+
+                <p>
+                    Add a &lt;footer&gt; element below this section to say "Completed by YourName". Notice that it gets placed right where the element is! Now make it a true footer by cutting and pasting it to the bottom of the document, after the &lt;main&gt; element (but still inside the &lt;body&gt;)
+                </p>
+
             </section>
 
             <br>
@@ -498,13 +549,17 @@
                     Meanwhile, <b>inline</b> elements like &lt;a&gt;, &lt;b&gt;, &lt;img&gt; and &lt;span&gt;do NOT start a new line, and they only take up as much width as their content needs, allowing for several of them to exist on the same line.
                 </p>
 
+                <p>
+                    <span>Change</span> <span>these</span> <span>&lt;span&gt;</span> <span>tags</span> <span>to</span> <span>&lt;div&gt;s</span> <span>to</span> <span>see</span> <span>the</span> <span>difference.</span>div
+                </p>
+
             </section>
 
             <br>
             <br>
 
             <p>
-                Your final task for this sheet is to go back to Section Overview at the top of the page and turn the list items into links that will take you to the different sections. That way, this sheet will server as a handy reference when you build more websites! Remember that you will also need to add ids in the section headers for the links.
+                Your final task for this sheet is to go back to Section Overview at the top of the page and turn it into a functional NavBar section. To accomplish this, you will need to add ids to the various sections through the document, and change the list items into links that will take you to them. That way, this sheet will server as a handy reference when you build more websites! Also take a look at the available semantic elements and decide which one seems most appropriate for a NavBar, then wrap the whole NavBar in its own semantic element.
             </p>
 
             <p>Happy Coding!</p>
